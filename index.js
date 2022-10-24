@@ -1,6 +1,7 @@
 function setSceneStart() {
   document.getElementById("sceneStart").setAttribute("visible", "true");
   document.getElementById("sceneMap").setAttribute("visible", "false");
+  document.getElementById("mapsound").setAttribute("src", "mapsound");
   
 }
 
@@ -16,7 +17,7 @@ function setSceneMap() {
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "false");
-  document.getElementById("human1").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/1-minute-of-silence.mp3t");
   
 }
 
@@ -26,7 +27,7 @@ function setScene2() {
   document.getElementById("scene2hdgd").setAttribute("visible", "false");
   document.getElementById("scene5").setAttribute("visible", "false");
   document.getElementById("scene5hdgd").setAttribute("visible", "false");
-  document.getElementById("human1").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/human_1.mp3");
   
   
 }
@@ -36,7 +37,7 @@ function setScene2HG() {
   document.getElementById("scene2").setAttribute("visible", "false");
   document.getElementById("scene2hdgd").setAttribute("visible", "true");
   document.getElementById("scene5").setAttribute("visible", "false");
-  
+  document.getElementById("mapsound").setAttribute("src", "project s audio/Hedgehog_audioFile_A.mp3");
 }
 
 function setScene5() {
@@ -46,7 +47,7 @@ function setScene5() {
   document.getElementById("scene2").setAttribute("visible", "false");
   document.getElementById("scene2hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
-  document.getElementById("human2").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/human_2.mp3");
  
   
 }
@@ -56,6 +57,7 @@ function setScene5HG() {
   document.getElementById("scene5").setAttribute("visible", "false");
   document.getElementById("scene5hdgd").setAttribute("visible", "true");
   document.getElementById("scene4").setAttribute("visible", "false");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/Hedgehog_audioFile_B.mp3");
   
 }
 
@@ -67,7 +69,7 @@ function setScene4() {
   document.getElementById("scene3").setAttribute("visible", "false");
   document.getElementById("scene5").setAttribute("visible", "false");
   document.getElementById("scene5hdgd").setAttribute("visible", "false");
-  document.getElementById("human3").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/human_3.mp3");
   
 }
 
@@ -76,7 +78,7 @@ function setScene4HG() {
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "true");
   document.getElementById("scene3").setAttribute("visible", "false");
-  document.getElementById("human1").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/Hedgehog_audioFile_B.mp3");
 
 }
 
@@ -87,7 +89,7 @@ function setScene3() {
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "false");
-  document.getElementById("human4").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/human_4.mp3");
   
 }
 
@@ -95,7 +97,7 @@ function setScene3HG() {
   document.getElementById("sceneMap").setAttribute("visible", "false");
   document.getElementById("scene3").setAttribute("visible", "false");
   document.getElementById("scene3hdgd").setAttribute("visible", "true");
-  document.getElementById("human1").setAttribute("src", "");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/Hedgehog_audioFile_D.mp3");
   
 
   
