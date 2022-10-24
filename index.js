@@ -48,7 +48,6 @@ function setScene3() {
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "false");
-  document.getElementById("scene2").setAttribute("visible", "false");
   document.getElementById("human1").setAttribute("src", "");
   
 }
@@ -57,7 +56,6 @@ function setScene3HG() {
   document.getElementById("sceneMap").setAttribute("visible", "false");
   document.getElementById("scene3").setAttribute("visible", "false");
   document.getElementById("scene3hdgd").setAttribute("visible", "true");
-  document.getElementById("scene2").setAttribute("visible", "false");
   document.getElementById("human1").setAttribute("src", "");
   
 
@@ -81,7 +79,6 @@ function setScene4HG() {
   document.getElementById("scene4hdgd").setAttribute("visible", "true");
   document.getElementById("scene3").setAttribute("visible", "false");
   document.getElementById("human1").setAttribute("src", "");
-
   
 }
 

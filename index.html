@@ -143,7 +143,7 @@
         <a-sky src="#woodhuman" rotation="180 180 165"></a-sky>
         <a-text value="Back to map view" color="white" position="-4.12 2.8 -4.9" width="6.3" align="center"></a-text>
         <a-text value="Next scene" color="white" position="4.05 2.8 -4.9" width="6.3" align="center"></a-text>
-        <a-text value="Your point of view" color="white" position="0.45 -3.15 -4.9" width="6.5" align="center"></a-text>
+        <a-text value="Go to Bernie point of view" color="white" position="0.45 -3.15 -4.9" width="5.5" align="center"></a-text>
           
         
         
@@ -168,6 +168,7 @@
           scale="0.02 0.02 0.02" 
           position="-2 -3.5 -5"
           material="color: #7AB1AC"
+          onclick="setScene2HG()"
         ></a-entity>
 
         <a-entity
@@ -185,7 +186,7 @@
          <a-sky src="#woodhedgode" rotation="180 180 178"></a-sky>
          <a-text value="Back to map view" color="white" position="-4.126 2.69 -3.8" width="4.7" align="center"></a-text>
          <a-text value="Next scene" color="white" position="3.85 2.68 -3.8" width="5" align="center"></a-text>
-         <a-text value="Bernie point of view" color="#2B250E" position="-0.2 -2.15 -3.8" width="5" align="center"></a-text>
+         <a-text value="Go to human point of view" color="#2B250E" position="-0.2 -2.15 -3.8" width="4" align="center"></a-text>
           
         
           <a-entity 
@@ -209,7 +210,7 @@
             scale="0.015 0.015 0.015" 
             position="-1.5 -2.5 -4"
             material="color: #7AB1AC"
-            onclick=""
+            onclick="setScene2()"
           ></a-entity>
 
           <a-entity
@@ -251,6 +252,7 @@
           scale="0.02 0.02 0.02" 
           position="-2 -3.5 -5"
           material="color: #7AB1AC"
+          onclick="setScene3HG()"
         ></a-entity>
 
         <a-entity
@@ -291,7 +293,7 @@
           scale="0.015 0.015 0.015" 
           position="-1.5 -2.5 -4"
           material="color: #7AB1AC"
-          onclick=""
+          onclick="setScene3()"
         ></a-entity>
 
         <a-entity
@@ -332,6 +334,7 @@
           scale="0.02 0.02 0.02" 
           position="-2 -3.5 -5"
           material="color: #7AB1AC"
+          onclick="setScene4HG()"
         ></a-entity>
 
         <a-entity
@@ -371,7 +374,7 @@
           scale="0.015 0.015 0.015" 
           position="-1.5 -2.5 -4"
           material="color: #7AB1AC"
-          onclick=""
+          onclick="setScene4()"
         ></a-entity>
 
         <a-entity
@@ -411,6 +414,7 @@
           scale="0.02 0.02 0.02" 
           position="-2 -3.5 -5"
           material="color: #7AB1AC"
+          onclick="setScene5HG()"
         ></a-entity>
 
         <a-entity
@@ -428,8 +432,6 @@
         <a-text value="Next scene" color="white" position="4.2 2.8 -3.9" width="6.3" align="center"></a-text>
         <a-text value="Your point of view" color="white" position="0.5 -3.15 -3.9" width="6.4" align="center"></a-text>
           
-        
-        
         <a-entity 
           obj-model="obj: 3D/BackToMap_TheHedgehogExperience v2.obj" 
           scale="0.02 0.02 0.02" 
@@ -443,15 +445,15 @@
           scale="0.02 0.02 0.02" 
           position="3 2.5 -4"
           material="color: #0B5B6A"
-          onclick="setScene3()"
+          onclick="setScene4()"
         ></a-entity>
 
         <a-entity 
           obj-model="obj: 3D/BernieViewer_TheHedgehogExperience v1.obj" 
           scale="0.02 0.02 0.02" 
-          position="-2 -3.5 -4"
+          position="-2 -3.5 -3.95"
           material="color: #7AB1AC"
-          onclick="setScene()"
+          onclick="setScene5()"
         ></a-entity>
         
       </a-entity>
