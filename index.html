@@ -23,8 +23,8 @@
             <img id="woodhedgode" src="Textures/HedgehogWoods_Blurr.jpg">
             <img id="roadhuman" src="Textures/road human.jpeg">
             <img id="roadhedgode" src="Textures/Road_Blurr.jpg">
-            <img id="personaview" src="Textures/persona.png">
-            <img id="hedgodeview" src="Textures/hedgode.png">
+            <img id="End" src="Textures/End.jpg">
+            
 
 
             <a-asset-item id="startbutton-obj" src="3D/StartButton_BecomingHedgehog v1 - Copy.obj"></a-asset-item>
@@ -33,6 +33,7 @@
             <a-asset-item id="nextscene-obj" src="3D/NewScene_TheHedgehogExperience v3.obj"></a-asset-item>
             <a-asset-item id="humanview-obj" src="3D/ViewSlider_TheHedgehogExperience v1.obj"></a-asset-item>
             <a-asset-item id="bernieview-obj" src="3D/BernieViewer_TheHedgehogExperience v1.obj"></a-asset-item>
+        
 
           
 
@@ -52,7 +53,7 @@
         <a-text value="Select" color="white" position="0 -0.04 -0.5" width="0.5" align="center"></a-text>
 
         <a-entity
-          cursor="fuse: true; maxDistance: 30; fuseTimeout: 1000"
+          cursor="fuse: true; maxDistance: 30; fuseTimeout: 600"
           position="0 0 -1"
           raycaster="objects: "
           geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
@@ -238,7 +239,6 @@
         <a-text value="Next scene" color="white" position="4.05 2.8 -4.9" width="6.3" align="center"></a-text>
         <a-text value="Hedgehog" color="#2B250E" position="-4.35 -3.1 -4.95" width="5" align="center"></a-text>
         <a-text value="Human" color="#2B250E" position="-2.85 -3.1 -4.95" width="5" align="center"></a-text>
-        
           
         
         <a-entity 
@@ -253,7 +253,7 @@
          obj-model="obj: 3D/NewScene_TheHedgehogExperience v3.obj" 
          scale="0.02 0.02 0.02" 
          position="2.9 2.5 -5"
-         material="color: #0B5B6A"
+         material="color: #2B250E"
          onclick="setScene4()"
         ></a-entity>
 
@@ -448,6 +448,7 @@
       <a-entity id="scene3hdgd" visible="false">
         <a-sky src="#roadhedgode"></a-sky>
         <a-text value="Back to map view" color="white" position="-4.03 2.65 -3.8" width="4.7" align="center"></a-text>
+        <a-text value="End" color="white" position="-4.1 2 -3.8" width="4.7" align="center"></a-text>
         <a-text value="Hedgehog" color="#2B250E" position="5.05 -3.1 -4.95" width="5" align="center"></a-text>
         <a-text value="Human" color="#2B250E" position="3.55 -3.1 -4.95" width="5" align="center"></a-text>
       
@@ -459,6 +460,15 @@
          position="-5.5 2.5 -4"
          material="color: #F63341"
          onclick="setSceneMap()"
+        ></a-entity>
+
+        <a-entity 
+         obj-model="obj: 3D/BackToMap_TheHedgehogExperience v2.obj" 
+         scale="0.015 0.015 0.015" 
+         rotation="0 180 180"
+         position="-5.5 2.3 -4"
+         material="color: #093342"
+         onclick="setSceneEND()"
         ></a-entity>
 
         <a-entity 
@@ -477,6 +487,21 @@
           onclick="setScene3()"
         ></a-entity>
 
+      </a-entity>
+
+      <a-entity id="sceneEnd" visible="false">
+        <a-sky color="#2B250E"></a-sky>
+        <a-image src="#End" width="6.5" height="4" position="0 -0.4 -4"></a-image>
+        <a-text value="Back to map" color="white" position="0 -2.7 -3.9" width="3.5" align="center"></a-text>
+       
+        <a-entity 
+        obj-model="obj: 3D/StartButton_BecomingHedgehog v1 - Copy.obj" 
+        scale="0.019 0.015 0.009" 
+        position="-0.9 -3 -4"
+        material="color: #F63341"
+        onclick="setSceneMap()"
+        ></a-entity>
+       
       </a-entity>
       
     </a-scene>

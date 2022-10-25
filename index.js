@@ -1,16 +1,4 @@
 
-AFRAME.registerComponent("foo", {
-  init: function() {
-    var playthisvid_1 = document.querySelector('#playbutton_1');
-    var videoEl_1 = document.querySelector('#intro');
-
-playthisvid_1.addEventListener('click', () => {
-
-      videoEl_1.play();
-      console.log("it clicks_1");
-    })
-  }
-})
 
 function setSceneStart() {
   document.getElementById("sceneStart").setAttribute("visible", "true");
@@ -32,6 +20,7 @@ function setSceneMap() {
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "false");
+  document.getElementById("sceneEnd").setAttribute("visible", "false");
   document.getElementById("mapsound").setAttribute("src", "project s audio/1-minute-of-silence.mp3t");
   
 }
@@ -112,9 +101,20 @@ function setScene3HG() {
   document.getElementById("sceneMap").setAttribute("visible", "false");
   document.getElementById("scene3").setAttribute("visible", "false");
   document.getElementById("scene3hdgd").setAttribute("visible", "true");
+  document.getElementById("sceneEnd").setAttribute("visible", "false");
   document.getElementById("mapsound").setAttribute("src", "project s audio/bernie4.mp3");
   
+  
 
+  
+}
+
+function setSceneEND() {
+  document.getElementById("sceneMap").setAttribute("visible", "false");
+  document.getElementById("sceneEnd").setAttribute("visible", "true");
+  document.getElementById("scene3hdgd").setAttribute("visible", "false");
+  document.getElementById("scene3").setAttribute("visible", "false");
+  document.getElementById("mapsound").setAttribute("src", "project s audio/1-minute-of-silence.mp3t");
   
 }
 
