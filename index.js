@@ -1,25 +1,16 @@
 
-var isUnlocked = false;
-function unlock() {
-			
-	if(isIOS || this.unlocked)
-		return;
+AFRAME.registerComponent("foo", {
+  init: function() {
+    var playthisvid_1 = document.querySelector('#playbutton_1');
+    var videoEl_1 = document.querySelector('#intro');
 
-	// create empty buffer and play it
-	var buffer = myContext.createBuffer(1, 1, 22050);
-	var source = myContext.createBufferSource();
-	source.buffer = buffer;
-	source.connect(myContext.destination);
-	source.noteOn(0);
+playthisvid_1.addEventListener('click', () => {
 
-	// by checking the play state after some time, we know if we're really unlocked
-	setTimeout(function() {
-		if((source.playbackState === source.PLAYING_STATE || source.playbackState === source.FINISHED_STATE)) {
-			isUnlocked = true;
-		}
-	}, 0);
-
-}
+      videoEl_1.play();
+      console.log("it clicks_1");
+    })
+  }
+})
 
 function setSceneStart() {
   document.getElementById("sceneStart").setAttribute("visible", "true");
