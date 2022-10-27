@@ -4,6 +4,7 @@ function setSceneStart() {
   document.getElementById("sceneStart").setAttribute("visible", "true");
   document.getElementById("sceneMap").setAttribute("visible", "false");
   document.getElementById("mapsound").setAttribute("src", "mapsound");
+  document.getElementById("sceneEnd").setAttribute("visible", "false");
   
 }
 
@@ -20,7 +21,6 @@ function setSceneMap() {
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene4").setAttribute("visible", "false");
   document.getElementById("scene4hdgd").setAttribute("visible", "false");
-  document.getElementById("sceneEnd").setAttribute("visible", "false");
   document.getElementById("mapsound").setAttribute("src", "project s audio/1-minute-of-silence.mp3t");
   
 }
@@ -110,7 +110,7 @@ function setScene3HG() {
 }
 
 function setSceneEND() {
-  document.getElementById("sceneMap").setAttribute("visible", "false");
+  document.getElementById("sceneStart").setAttribute("visible", "false");
   document.getElementById("sceneEnd").setAttribute("visible", "true");
   document.getElementById("scene3hdgd").setAttribute("visible", "false");
   document.getElementById("scene3").setAttribute("visible", "false");
